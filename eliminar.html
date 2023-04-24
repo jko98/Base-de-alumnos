@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: rgb(181,60,107);
+background: linear-gradient(90deg, rgba(181,60,107,1) 15%, rgba(62,69,126,1) 51%, rgba(0,212,255,1) 100%);
+font-family: 'Playfair Display', serif;
+        }
+        form{
+            margin: auto;
+    text-align: center;
+    border: none;
+    padding: 20px;
+    width: 50%;
+    color: white;
+        }
+        .cabezal{
+            padding: 1em;
+        }
+       label{
+        display: inline-block;
+        width: 70px;
+       }
+       .card{
+        padding: 6px;
+       }
+    </style>
+</head>
+<body>
+    <form action="borrar.php" method="post">
+            <div class="cabezal">
+                <header><h1>Eliminar alumnos/as</h1></header>
+            </div>
+            <div class="card">
+                <label>Codigo unico:</label>
+                <input type="number" name="codigo">
+            </div>
+            <input type="submit" value="Borrar">
+    </form>
+</body>
+</html>
